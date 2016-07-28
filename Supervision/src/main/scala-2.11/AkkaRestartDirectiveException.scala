@@ -1,0 +1,1 @@
+class AkkaRestartDirectiveException(msg: String) extends Exception(msg)
