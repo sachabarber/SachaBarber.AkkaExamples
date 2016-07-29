@@ -28,10 +28,12 @@ class LifeCycleActor extends Actor {
 
     case RaiseStopThrowableMessage =>
       println("LifeCycleActor: RaiseStopThrowableMessage seen")
-      throw new AkkaStopDirectiveException("LifeCycleActor raised AkkaStopDirectiveException")
+      throw new AkkaStopDirectiveException(
+        "LifeCycleActor raised AkkaStopDirectiveException")
 
     case RaiseRestartThrowableMessage =>
       println("LifeCycleActor: RaiseRestartThrowableMessage seen")
-      throw new AkkaRestartDirectiveException("LifeCycleActor raised AkkaRestartDirectiveException")
+      throw new AkkaRestartDirectiveException(
+        "LifeCycleActor raised AkkaRestartDirectiveException")
   }
 }
