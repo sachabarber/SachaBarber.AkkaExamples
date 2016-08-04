@@ -1,6 +1,8 @@
 import akka.actor.{DeadLetter, Actor}
 
-class DeadLetterMonitorActor extends Actor with akka.actor.ActorLogging {
+class DeadLetterMonitorActor
+  extends Actor
+  with akka.actor.ActorLogging {
   log.info("DeadLetterMonitorActor: constructor")
 
   def receive = {
