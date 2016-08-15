@@ -1,0 +1,1 @@
+case class Evt(data: String)
