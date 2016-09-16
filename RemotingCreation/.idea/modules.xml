@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RemoteCreation-App.iml" filepath="$PROJECT_DIR$/.idea/modules/RemoteCreation-App.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RemoteCreation-App-build.iml" filepath="$PROJECT_DIR$/.idea/modules/RemoteCreation-App-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-build.iml" filepath="$PROJECT_DIR$/.idea/modules/common-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/project/.idea/modules/project.iml" filepath="$PROJECT_DIR$/common/project/.idea/modules/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/project/.idea/modules/project-build.iml" filepath="$PROJECT_DIR$/common/project/.idea/modules/project-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/remote.iml" filepath="$PROJECT_DIR$/.idea/modules/remote.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/remote-build.iml" filepath="$PROJECT_DIR$/.idea/modules/remote-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/remotecreation.iml" filepath="$PROJECT_DIR$/.idea/modules/remotecreation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/remotecreation-build.iml" filepath="$PROJECT_DIR$/.idea/modules/remotecreation-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root.iml" filepath="$PROJECT_DIR$/.idea/modules/root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
     </modules>
   </component>
 </project>

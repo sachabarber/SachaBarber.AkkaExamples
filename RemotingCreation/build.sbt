@@ -15,30 +15,29 @@ lazy val AllLibraryDependencies =
 
 
 lazy val commonSettings = Seq(
-  name := "RemoteCreation",
   version := "1.0",
   scalaVersion := "2.11.8",
   resolvers := allResolvers,
   libraryDependencies := AllLibraryDependencies
 )
 
-lazy val demoApp = Project (
-  "RemoteCreation-App",
-  file ("RemoteCreation-App"),
-  settings = commonSettings
-)
-//build these projects when main App project gets built
-  //.aggregate(common)
-  //.dependsOn(common)
 
-lazy val common = Project (
-  "common",
-  file ("RemoteCreation-Common"),
-  settings = commonSettings
-)
+lazy val root =(project in file(".")).
+  settings(commonSettings: _*).
+  settings(
+    name := "Base"
+  )
+  .aggregate(common, remote)
+  .dependsOn(common)
 
-lazy val remote = Project (
-  "remote",
-  file ("RemoteCreation-Remote"),
-  settings = commonSettings
-)
+lazy val common = (project in file("common")).
+  settings(commonSettings: _*).
+  settings(
+    name := "common"
+  )
+
+lazy val remote = (project in file("remote")).
+  settings(commonSettings: _*).
+  settings(
+    name := "remote"
+  )

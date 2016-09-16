@@ -7,8 +7,12 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/RemoteCreation-Common" />
-            <option value="$PROJECT_DIR$/RemoteCreation-Common/project" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/common/project" />
+            <option value="$PROJECT_DIR$/project" />
+            <option value="$PROJECT_DIR$/remote" />
+            <option value="$PROJECT_DIR$/remote/project" />
           </set>
         </option>
         <option name="resolveClassifiers" value="true" />
@@ -18,8 +22,12 @@
         <option name="useOurOwnAutoImport" value="true" />
         <option name="myModules">
           <set>
-            <option value="$PROJECT_DIR$/RemoteCreation-Common" />
-            <option value="$PROJECT_DIR$/RemoteCreation-Common/project" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/common/project" />
+            <option value="$PROJECT_DIR$/project" />
+            <option value="$PROJECT_DIR$/remote" />
+            <option value="$PROJECT_DIR$/remote/project" />
           </set>
         </option>
       </SbtProjectSettings>

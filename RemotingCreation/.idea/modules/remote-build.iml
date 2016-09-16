@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="RemoteCreation-App-build" external.linked.project.path="$MODULE_DIR$/../../RemoteCreation-App/project" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" sbt.imports="sbt._, Keys._, dsl._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, $1c597ddb2be189fa81ca.remote, $1c597ddb2be189fa81ca.common, $1c597ddb2be189fa81ca.demoApp" sbt.resolvers="https://repo1.maven.org/maven2/|maven|public, http://repo.typesafe.com/typesafe/releases/|maven|Typesafe Repository, http://repo.akka.io/snapshots/|maven|Akka Snapshot Repository, C:\Users\sacha\.ivy2\cache|ivy|Local cache" type="SBT_MODULE" version="4">
+<module external.linked.project.id="remote-build" external.linked.project.path="$MODULE_DIR$/../../remote/project" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" sbt.imports="sbt._, Keys._, dsl._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, $555c9f20d3b22f9edb82.remote, $555c9f20d3b22f9edb82.common, $555c9f20d3b22f9edb82.root" sbt.resolvers="https://repo1.maven.org/maven2/|maven|public, http://repo.typesafe.com/typesafe/releases/|maven|Typesafe Repository, http://repo.akka.io/snapshots/|maven|Akka Snapshot Repository, C:\Users\sacha\.ivy2\cache|ivy|Local cache" type="SBT_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="false">
-    <output url="file://$MODULE_DIR$/../../RemoteCreation-App/project/target/idea-classes" />
-    <output-test url="file://$MODULE_DIR$/../../RemoteCreation-App/project/target/idea-test-classes" />
+    <output url="file://$MODULE_DIR$/../../remote/project/target/idea-classes" />
+    <output-test url="file://$MODULE_DIR$/../../remote/project/target/idea-test-classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../RemoteCreation-App/project">
-      <sourceFolder url="file://$MODULE_DIR$/../../RemoteCreation-App/project" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/../../RemoteCreation-App/project/project/target" />
-      <excludeFolder url="file://$MODULE_DIR$/../../RemoteCreation-App/project/target" />
+    <content url="file://$MODULE_DIR$/../../remote/project">
+      <sourceFolder url="file://$MODULE_DIR$/../../remote/project" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../remote/project/project/target" />
+      <excludeFolder url="file://$MODULE_DIR$/../../remote/project/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
