@@ -28,7 +28,7 @@ lazy val root =(project in file(".")).
     name := "Base"
   )
   .aggregate(common, remote)
-  .dependsOn(common)
+  .dependsOn(common, remote)
 
 lazy val common = (project in file("common")).
   settings(commonSettings: _*).
@@ -41,3 +41,5 @@ lazy val remote = (project in file("remote")).
   settings(
     name := "remote"
   )
+  .aggregate(common)
+  .dependsOn(common)
