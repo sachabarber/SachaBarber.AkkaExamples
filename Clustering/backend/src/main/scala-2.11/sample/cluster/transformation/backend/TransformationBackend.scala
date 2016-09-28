@@ -22,7 +22,11 @@ class TransformationBackend extends Actor {
   override def postStop(): Unit = cluster.unsubscribe(self)
 
   def receive = {
-    case TransformationJob(text) => sender() ! TransformationResult(text.toUpperCase)
+    case TransformationJob(text) => {
+      val result = text.toUpperCase
+      println(s"Backend has transformed the incoming job text of '$text' into '$result'")
+      sender() ! TransformationResult(text.toUpperCase)
+    }
     case state: CurrentClusterState =>
       state.members.filter(_.status == MemberStatus.Up) foreach register
     case MemberUp(m) => register(m)

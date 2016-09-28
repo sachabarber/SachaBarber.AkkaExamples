@@ -9,9 +9,11 @@ lazy val allResolvers = Seq(
 
 lazy val AllLibraryDependencies =
   Seq(
-    "com.typesafe.akka" %% "akka-actor" % "2.4.8",
-    "com.typesafe.akka" %% "akka-remote" % "2.4.8",
-    "com.typesafe.akka" %% "akka-cluster" % "2.4.8"
+    "com.typesafe.akka" %% "akka-actor"         % "2.4.8",
+    "com.typesafe.akka" %% "akka-remote"        % "2.4.8",
+    "com.typesafe.akka" %% "akka-cluster"       % "2.4.8",
+    "com.typesafe.akka" %% "akka-cluster-tools" % "2.4.8",
+    "com.typesafe.akka" %% "akka-contrib"       % "2.4.8"
   )
 
 

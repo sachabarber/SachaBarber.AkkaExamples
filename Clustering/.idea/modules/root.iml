@@ -52,6 +52,19 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="SBT: com.typesafe.akka:akka-cluster-tools_2.11:2.4.8:jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-cluster-tools_2.11/jars/akka-cluster-tools_2.11-2.4.8.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-cluster-tools_2.11/docs/akka-cluster-tools_2.11-2.4.8-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-cluster-tools_2.11/srcs/akka-cluster-tools_2.11-2.4.8-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="SBT: com.typesafe.akka:akka-cluster_2.11:2.4.8:jar">
         <CLASSES>
           <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.4.8.jar!/" />
@@ -61,6 +74,32 @@
         </JAVADOC>
         <SOURCES>
           <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/srcs/akka-cluster_2.11-2.4.8-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="SBT: com.typesafe.akka:akka-contrib_2.11:2.4.8:jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.4.8.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/docs/akka-contrib_2.11-2.4.8-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/srcs/akka-contrib_2.11-2.4.8-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="SBT: com.typesafe.akka:akka-persistence_2.11:2.4.8:jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-persistence_2.11/jars/akka-persistence_2.11-2.4.8.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-persistence_2.11/docs/akka-persistence_2.11-2.4.8-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-persistence_2.11/srcs/akka-persistence_2.11-2.4.8-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>

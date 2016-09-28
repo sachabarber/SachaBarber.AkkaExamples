@@ -9,6 +9,7 @@ import akka.pattern.ask
 import akka.util.Timeout
 import com.typesafe.config.ConfigFactory
 import java.util.concurrent.atomic.AtomicInteger
+import akka.cluster.client.ClusterClientReceptionist
 
 
 
@@ -24,15 +25,18 @@ object TransformationFrontendApp {
 
     val system = ActorSystem("ClusterSystem", config)
     val frontend = system.actorOf(Props[TransformationFrontend], name = "frontend")
+    ClusterClientReceptionist(system).registerService(frontend)
 
-    val counter = new AtomicInteger
-    import system.dispatcher
-    system.scheduler.schedule(2.seconds, 2.seconds) {
-      implicit val timeout = Timeout(5 seconds)
-      (frontend ? TransformationJob("hello-" + counter.incrementAndGet())) onSuccess {
-        case result => println(result)
-      }
-    }
+
+
+//    val counter = new AtomicInteger
+//    import system.dispatcher
+//    system.scheduler.schedule(2.seconds, 2.seconds) {
+//      implicit val timeout = Timeout(5 seconds)
+//      (frontend ? TransformationJob("hello-" + counter.incrementAndGet())) onSuccess {
+//        case result => println(result)
+//      }
+//    }
   }
 
 }

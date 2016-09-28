@@ -8,3 +8,16 @@ In order to run this you should run thins in the following order
 
 
 
+ClusterClient
+
+https://groups.google.com/forum/#!topic/akka-user/rqSqh82fimE
+Future<Object> future = Patterns.ask(clusterClient, new ClusterClient.Send(ClusterActorPath, message, true), timeout)
+
+https://gist.github.com/phoenix24/6097895
+
+http://blog.michaelhamrah.com/2014/02/using-akkas-clusterclient/
+
+
+
+Distributed workers
+http://www.lightbend.com/activator/template/akka-distributed-workers?_ga=1.183640678.1129354442.1469166689
