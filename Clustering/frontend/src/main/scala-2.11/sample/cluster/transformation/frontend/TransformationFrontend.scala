@@ -9,12 +9,9 @@ import akka.actor.Terminated
 import akka.util.Timeout
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
-
-
 import akka.pattern.pipe
 import akka.pattern.ask
 
-import scala.util.{Success, Failure}
 
 class TransformationFrontend extends Actor {
 
@@ -28,20 +25,10 @@ class TransformationFrontend extends Actor {
     case job: TransformationJob =>
       println(s"Frontend saw TransformationJob : '$job'")
       jobCounter += 1
-      //backends(jobCounter % backends.size) forward job
-
       implicit val timeout = Timeout(5 seconds)
-      val result : Future[TransformationResult] = (backends(jobCounter % backends.size) ? job).map(x => x.asInstanceOf[TransformationResult])
-      result.onComplete {
-        case Success(transformationResult) => {
-          println(s"Front end saw TransformationResult: $transformationResult trying to send to ${sender.path.address.toString}")
-          sender ! transformationResult
-        }
-        case Failure(t) => println("An error has occured: " + t.getMessage)
-      }
-
-
-//      pipe(result) to sender
+      val result  = (backends(jobCounter % backends.size) ? job).map(x => x.asInstanceOf[TransformationResult])
+      result pipeTo sender
+      //pipe(result) to sender
 
     case BackendRegistration if !backends.contains(sender()) =>
       context watch sender()

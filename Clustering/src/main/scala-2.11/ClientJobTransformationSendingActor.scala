@@ -24,26 +24,18 @@ class ClientJobTransformationSendingActor extends Actor {
       println("Client response")
       println(result)
     }
-    case Start => {
-      (1 to 1000).map { i =>
-        val job = TransformationJob("hello-" + i)
-        c ! ClusterClient.Send("/user/frontend", job, localAffinity = true)
+    case Send(counter) => {
+        val job = TransformationJob("hello-" + counter)
+        implicit val timeout = Timeout(5 seconds)
+        val result = Patterns.ask(c,ClusterClient.Send("/user/frontend", job, localAffinity = true), timeout)
 
-//        implicit val timeout = Timeout(5 seconds)
-//        val result = Patterns.ask(c,ClusterClient.Send("/system/frontend", job, localAffinity = true), timeout)
-//
-//        result.onComplete {
-//          case Success(transformationResult) => {
-//            println(s"Client saw result: $transformationResult")
-//            self ! transformationResult
-//          }
-//          case Failure(t) => println("An error has occured: " + t.getMessage)
-//        }
-
-
-
-        Thread.sleep(1000)
+        result.onComplete {
+          case Success(transformationResult) => {
+            println(s"Client saw result: $transformationResult")
+            self ! transformationResult
+          }
+          case Failure(t) => println("An error has occured: " + t.getMessage)
+        }
       }
-    }
   }
 }
