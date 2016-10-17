@@ -26,7 +26,8 @@ class TransformationFrontend extends Actor {
       println(s"Frontend saw TransformationJob : '$job'")
       jobCounter += 1
       implicit val timeout = Timeout(5 seconds)
-      val result  = (backends(jobCounter % backends.size) ? job).map(x => x.asInstanceOf[TransformationResult])
+      val result  = (backends(jobCounter % backends.size) ? job)
+        .map(x => x.asInstanceOf[TransformationResult])
       result pipeTo sender
       //pipe(result) to sender
 

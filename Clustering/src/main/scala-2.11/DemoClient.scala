@@ -10,7 +10,9 @@ object DemoClient {
   def main(args : Array[String]) {
 
     val system = ActorSystem("OTHERSYSTEM")
-    val clientJobTransformationSendingActor = system.actorOf(Props[ClientJobTransformationSendingActor], name = "clientJobTransformationSendingActor")
+    val clientJobTransformationSendingActor =
+      system.actorOf(Props[ClientJobTransformationSendingActor],
+        name = "clientJobTransformationSendingActor")
 
     val counter = new AtomicInteger
     import system.dispatcher
