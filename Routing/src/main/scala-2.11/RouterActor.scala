@@ -1,9 +1,10 @@
 import java.util.concurrent.atomic.AtomicInteger
+
 import akka.actor.{Actor, Props, Terminated}
-import akka.routing.{ ActorRefRoutee, RoundRobinRoutingLogic, Router }
+import akka.routing.{RoutingLogic, ActorRefRoutee, RoundRobinRoutingLogic, Router}
 
 
-class RoundRobinRouterActor  extends Actor  {
+class RouterActor(val routingLogic : RoutingLogic)  extends Actor  {
 
   val counter : AtomicInteger = new AtomicInteger()
 
@@ -15,7 +16,10 @@ class RoundRobinRouterActor  extends Actor  {
     ActorRefRoutee(r)
   }
 
-  var router = Router(RoundRobinRoutingLogic(), routees)
+  //create a Router based on the incoming class field
+  //RoutingLogic which will really determine what type of router
+  //we end up with
+  var router = Router(routingLogic, routees)
 
   def receive = {
     case WorkMessage =>
