@@ -1,5 +1,4 @@
 import akka.actor.Actor
-
 import scala.annotation.tailrec
 
 class FibonacciActor extends Actor {
@@ -8,7 +7,8 @@ class FibonacciActor extends Actor {
 
   def receive = {
     case FibonacciNumber(nbr) => {
-      println(s"FibonacciActor : ($actName) ->  has been asked to calculate FibonacciNumber")
+      println(s"FibonacciActor : ($actName) ->  " +
+        s"has been asked to calculate FibonacciNumber")
       val result = fibonacci(nbr)
       sender ! (actName,result)
     }

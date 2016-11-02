@@ -33,8 +33,8 @@ object Demo extends App {
   //    Comment/Uncomment to try the different router logic
   //
   //==============================================================
-  RunScatterGatherFirstCompletedPoolDemo()
-  //RunTailChoppingPoolDemo()
+  //RunScatterGatherFirstCompletedPoolDemo()
+  RunTailChoppingPoolDemo()
 
 
 
@@ -83,13 +83,10 @@ object Demo extends App {
     RunPoolDemo(props)
   }
 
-
-
-
-
   def RunPoolDemo(props : Props) : Unit = {
     val system = ActorSystem("RoutingSystem")
-    val actorRef = system.actorOf(Props(new PoolRouterContainerActor(props,"theRouter")), name = "thePoolContainer")
+    val actorRef = system.actorOf(Props(
+      new PoolRouterContainerActor(props,"theRouter")), name = "thePoolContainer")
     actorRef ! WorkMessage
     StdIn.readLine()
     system.terminate()
