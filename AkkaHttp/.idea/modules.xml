@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akkahttp.iml" filepath="$PROJECT_DIR$/.idea/modules/akkahttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akkahttp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/akkahttp-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clientside.iml" filepath="$PROJECT_DIR$/.idea/modules/clientside.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clientside-build.iml" filepath="$PROJECT_DIR$/.idea/modules/clientside-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-build.iml" filepath="$PROJECT_DIR$/.idea/modules/common-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/serverside.iml" filepath="$PROJECT_DIR$/.idea/modules/serverside.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/serverside-build.iml" filepath="$PROJECT_DIR$/.idea/modules/serverside-build.iml" />
+    </modules>
+  </component>
+</project>
