@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"
+            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+            crossorigin="anonymous"></script>
+    <title>Chat</title>
+</head>
+<body>
+<textarea id="message"></textarea>
+<button id="send">Send</button>
+<ul id="messages"></ul>
+
+
+<script language="javascript">
+            var $messages = $("#messages"),
+                $send = $("#send"),
+                $message = $("#message"),
+                connection = new WebSocket('ws://localhost:8080/websocket')
+            $send.prop("disabled",true)
+            connection.onopen = function () {
+                $send.prop("disabled",false)
+                $messages.prepend($("<li>Connected</li>"))
+                $send.on('click', function() {
+                    var text = $message.val()
+                    $message.val("")
+                    connection.send(text)
+                })
+            }
+            connection.onerror = function (error) { console.log('WebSocket Error ', error) }
+            connection.onmessage = function (event) {
+                $messages.prepend($("<li>" + event.data + "</li>"))
+            }
+        </script>
+</body>
+</html>
+Contact GitHub

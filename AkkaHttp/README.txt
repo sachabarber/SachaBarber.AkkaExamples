@@ -1,9 +1,11 @@
-Good example
+chat
 
-https://github.com/dnvriend/akka-http-test
-http://www.diversit.eu/2015/07/using-akka-http-to-perform-rest-call.html
-http://alexkuang.com/blog/2016/04/26/writing-an-api-client-with-akka-http/
+https://markatta.com/codemonkey/blog/2016/04/18/chat-with-akka-http-websockets/
+https://markatta.com/codemonkey/blog/2016/10/02/chat-with-akka-http-websockets/
 
-POST
-http://stackoverflow.com/questions/32757605/idiomatic-way-to-create-a-basic-http-post-request-with-akka-http
 
+TESTING WEB SOCKET STUFF
+
+1. Run server
+2. Browse to ChatTestClient.Html in browser
+3. Open Postman to http://localhost:8080/dowork this should send some responses to the websocket client opened in browser
