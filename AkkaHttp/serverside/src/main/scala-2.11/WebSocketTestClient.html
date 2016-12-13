@@ -12,25 +12,25 @@
 
 
 <script language="javascript">
-            var $messages = $("#messages"),
-                $send = $("#send"),
-                $message = $("#message"),
-                connection = new WebSocket('ws://localhost:8080/websocket')
-            $send.prop("disabled",true)
-            connection.onopen = function () {
-                $send.prop("disabled",false)
-                $messages.prepend($("<li>Connected</li>"))
-                $send.on('click', function() {
-                    var text = $message.val()
-                    $message.val("")
-                    connection.send(text)
-                })
-            }
-            connection.onerror = function (error) { console.log('WebSocket Error ', error) }
-            connection.onmessage = function (event) {
-                $messages.prepend($("<li>" + event.data + "</li>"))
-            }
-        </script>
+    var $messages = $("#messages"),
+        $send = $("#send"),
+        $message = $("#message"),
+        connection = new WebSocket('ws://localhost:8080/websocket')
+    $send.prop("disabled",true)
+    connection.onopen = function () {
+        $send.prop("disabled",false)
+        $messages.prepend($("<li>Connected</li>"))
+        $send.on('click', function() {
+            var text = $message.val()
+            $message.val("")
+            connection.send(text)
+        })
+    }
+    connection.onerror = function (error) { console.log('WebSocket Error ', error) }
+    connection.onmessage = function (event) {
+        $messages.prepend($("<li>" + event.data + "</li>"))
+    }
+</script>
 </body>
 </html>
 Contact GitHub
