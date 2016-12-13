@@ -84,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DistinctUntilChanged.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DistinctUntilChanged.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/DistinctUntilChanged.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6587384">
-              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
               <folding>
                 <element signature="e#30#107#0" expanded="true" />
               </folding>
@@ -130,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/CustomShapeDemo.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="33" />
               <folding>
                 <element signature="e#30#59#0" expanded="true" />
               </folding>
@@ -148,11 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Demo.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Demo.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/sas/Demo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7507756">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#17#36#0" expanded="true" />
               </folding>
@@ -196,10 +196,10 @@
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/AccumulateWhileUnchanged.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/Element.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/SampleElements.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/Demo.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/basicflows/BasicFlowDemo.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/CustomShapeDemo.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/DistinctUntilChanged.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/CustomShapeDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala-2.11/com/sas/Demo.scala" />
       </list>
     </option>
   </component>
@@ -1163,31 +1163,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/sas/Demo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#17#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/srcs/akka-stream_2.11-2.4.8-sources.jar!/akka/stream/stage/GraphStage.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="342" column="0" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/CustomShapeDemo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="e#30#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,10 +1191,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/DistinctUntilChanged.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6587384">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
             <element signature="e#30#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/sas/customshapes/CustomShapeDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#30#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/sas/Demo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7507756">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#36#0" expanded="true" />
           </folding>
         </state>
       </provider>

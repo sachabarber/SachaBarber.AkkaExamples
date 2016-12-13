@@ -23,7 +23,8 @@ object Demo extends App {
 
 
   val customShapeDemo = new CustomShapeDemo()
-  customShapeDemo.run()
+  customShapeDemo.runAccumulateWhileUnchanged()
+  customShapeDemo.runDistinctUntilChanged()
 
 
   StdIn.readLine()

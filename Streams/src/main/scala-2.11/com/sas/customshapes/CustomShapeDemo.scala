@@ -9,13 +9,15 @@ class CustomShapeDemo {
   implicit val system = ActorSystem("StreamsSystem")
   implicit val materializer = ActorMaterializer()
 
-  def run() : Unit = {
+  def runAccumulateWhileUnchanged() : Unit = {
     Source(SampleElements.All)
       .via(new AccumulateWhileUnchanged(_.value))
       .runWith(Sink.foreach(println))
+  }
 
+  def runDistinctUntilChanged() : Unit = {
     Source(SampleElements.All)
-          .via(new DistinctUntilChanged(_.value))
-          .runWith(Sink.foreach(println))
+      .via(new DistinctUntilChanged(_.value))
+      .runWith(Sink.foreach(println))
   }
 }
