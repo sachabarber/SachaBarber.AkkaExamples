@@ -5,7 +5,6 @@ import akka.stream.{Outlet, Attributes, Inlet, FlowShape}
 
 import scala.collection.immutable
 
-//https://www.softwaremill.com/implementing-a-custom-akka-streams-graph-stage/
 final class DistinctUntilChanged[E, P](propertyExtractor: E => P)
   extends GraphStage[FlowShape[E, E]] {
 

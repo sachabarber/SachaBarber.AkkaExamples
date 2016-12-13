@@ -11,19 +11,20 @@ import scala.language.postfixOps
 
 object Demo extends App {
 
-
-
+//  BASIC FLOWS
 // val basicFlowDemo = new BasicFlowDemo()
 //  basicFlowDemo.simpleFlow()
 //  basicFlowDemo.differentSourcesAndSinks()
 //  basicFlowDemo.mapFlow()
 //  basicFlowDemo.end()
+
+//  GRAPH DSL DEMO
 //  val writePrimesDemo = new WritePrimesDemo()
 //  writePrimesDemo.run()
 
-
+// CUSTOM SHAPES DEMOS
   val customShapeDemo = new CustomShapeDemo()
-  customShapeDemo.runAccumulateWhileUnchanged()
+  //customShapeDemo.runAccumulateWhileUnchanged()
   customShapeDemo.runDistinctUntilChanged()
 
 

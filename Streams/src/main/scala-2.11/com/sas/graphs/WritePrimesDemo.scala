@@ -32,7 +32,7 @@ class WritePrimesDemo {
     val fileSink = FileIO.toPath(new File("target/primes.txt").toPath)
     val slowSink = Flow[Int]
       // act as if processing is really slow
-      .map(i => { Thread.sleep(1000); ByteString(i.toString) })
+      .map(i => { Thread.sleep(1000); ByteString(i.toString + " ") })
       .toMat(fileSink)((_, bytesWritten) => bytesWritten)
 
     // console output sink
